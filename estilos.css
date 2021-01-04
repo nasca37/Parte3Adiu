@@ -5,35 +5,50 @@ body{
 }
 
 header{
-    display: block;
-    align-items: center;
- 
+    display: flex;
+    justify-content: space-around;
     background-color:#243447;
 
     color: white;
-    overflow: auto;
+    overflow: hidden;
     width: 100%;
     height:10%;
     font-size: 36px;
-    position: fixed;
+
 }
 
-.left{
+
+
+.rightItem{
+    float: right;
+    text-align: center;
+    margin-right: 0.2em;
+    margin-top: 1%;
+
+}
+
+.leftItem{
     text-align: center;
 
     float: left;
     margin-left: 0.2em;
-    margin-top: -1%;
-    height: 1%;
+    margin-top: 1%;
+
+}
+.inline{
+    display: inline-block;
+}
+.centerItem{
+
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
 }
 
-.right{
-    float: right;
-    text-align: center;
-    margin-right: 0.2em;
-    margin-top: -1%;
-    height: 1%;
-}
+
 .main{
     float: left;
     top: 12%;
