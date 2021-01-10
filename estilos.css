@@ -17,7 +17,13 @@ header{
 
 }
 
-
+.tamFuente{
+    align-items: center;
+    font-size: 28px;
+}
+.tamFuente2{
+    font-size: 36px;
+}
 
 .rightItem{
     float: right;
