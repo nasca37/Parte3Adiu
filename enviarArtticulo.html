@@ -20,9 +20,9 @@
     </header>
 
     <div id="main" class="main">
-        <h1>Envair articulo</h1>
+        <h1>Enviar articulo</h1>
         <p>Explicación</p>
-        <form >
+        <form class="form-inline">
             <div class="mb-3">
                 <label class="form-label">Titulo del articulo</label>
                 <input class="form-control" type="text">                
@@ -30,7 +30,14 @@
 
             <div class="mb-3">
                 <label class="form-label">Tema</label>
-                <input class="form-control"  type="text">                
+                <select class="custom-select my-1 mr-sm-2" >
+                    <option selected>Elección...</option>
+                    <option value="1">Ciencia</option>
+                    <option value="2">Tecnlogia</option>
+                    <option value="3">Videojuego</option>
+                    <option value="4">Peliculas</option>
+            
+                  </select>             
             </div>
             <div class="mb-3">
                 <label class="form-label">Descripción breve</label>
@@ -42,13 +49,13 @@
             </div>
             <div class="mb-3">
                 <label class="form-label">Foto de portada</label>
-                <textarea class="form-control" rows="2"  >   </textarea>             
+                <input class="form-control-file" type="file" >          
             </div>
             <div class="mb-3">
                 <label class="form-label">Resto de fotos</label>
-                <input class="form-control-file" type="file" rows="2"  >   </textarea>             
+                <input class="form-control-file" type="file" >            
             </div>
-            <button type="submit" class="btn btn-primary">Enviar sugerencia.</button>
+            <button type="submit" class="btn btn-primary">Enviar articulo.</button>
         </form>
 
     </div>
