@@ -12,11 +12,11 @@
 <body>
     <header>
         
-        <h5 class="tamFuente my-auto"><a  href="index.html">Home</a></h5>
-        <h5 class="tamFuente my-auto"><a href="enviarArtticulo.html">Enviar articulo</a></h5>
+        <h4 class="tamFuente my-auto"><a  href="index.html">Home</a></h4>
+        <h4 class="tamFuente my-auto"><a href="enviarArtticulo.html">Enviar articulo</a></h4>
         <h3 class="tamFuente2 my-auto">Practica Accesibilidad ADIU</h3>
-        <h5 class="tamFuente my-auto"><a href="ranking.html">Rankings </a></h5>
-        <h5 class="tamFuente my-auto"><a href="sugerencias.html">Sugerencias</a></h5>
+        <h4 class="tamFuente my-auto"><a href="ranking.html">Rankings </a></h4>
+        <h4 class="tamFuente my-auto"><a href="sugerencias.html">Sugerencias</a></h4>
         
 
     </header>
@@ -26,13 +26,13 @@
         <p>Explicación</p>
         <form class="form-inline">
             <div class="mb-3">
-                <label class="form-label">Titulo del articulo</label>
-                <input class="form-control" type="text">                
+                <label class="form-label" for="tituloArticulo">Titulo del articulo</label>
+                <input class="form-control" id="tituloArticulo" type="text">                
             </div>
 
             <div class="mb-3">
-                <label class="form-label">Tema</label>
-                <select class="custom-select my-1 mr-sm-2" >
+                <label class="form-label" for="selectorTema">Tema</label>
+                <select class="custom-select my-1 mr-sm-2" id="selectorTema" >
                     <option selected>Elección...</option>
                     <option value="1">Ciencia</option>
                     <option value="2">Tecnlogia</option>
@@ -42,20 +42,20 @@
                   </select>             
             </div>
             <div class="mb-3">
-                <label class="form-label">Descripción breve</label>
-                <textarea class="form-control" rows="2"  >   </textarea>             
+                <label class="form-label" for="DescripcionBreve">Descripción breve</label>
+                <textarea class="form-control" rows="2" id="DescripcionBreve"  >   </textarea>             
             </div>
             <div class="mb-3">
-                <label class="form-label">Articulo</label>
-                <textarea class="form-control" rows="8"  >   </textarea>             
+                <label class="form-label" for="CuerpoArticulo">Articulo</label>
+                <textarea class="form-control" rows="8" id="CuerpoArticulo" >   </textarea>             
             </div>
             <div class="mb-3">
-                <label class="form-label">Foto de portada</label>
-                <input class="form-control-file" type="file" >          
+                <label class="form-label" for="FotoPortada">Foto de portada</label>
+                <input class="form-control-file" type="file" id="FotoPortada">          
             </div>
             <div class="mb-3">
-                <label class="form-label">Resto de fotos</label>
-                <input class="form-control-file" type="file" >            
+                <label class="form-label" for="fotosGenerales">Resto de fotos</label>
+                <input class="form-control-file" type="file" id="fotosGenerales">            
             </div>
             <button type="submit" class="btn btn-primary">Enviar articulo.</button>
         </form>
