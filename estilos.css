@@ -69,16 +69,33 @@ header{
     margin-top: 2%;
     float: left;
     background-color: rgb(226, 226, 226);
-    
+    width:100%;
 }
 
-
-
+footer{
+    color:Black;
+    background-color: #243447;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height:5%;
+    font-size: 18px;
+}
+footer > h2{
+    margin-top: 4px;
+}
 
 .TextPreview{
     font-size: 18px;
 }
 
+
+.black{
+    color:lightseagreen;
+}
 .centralImage{
     width: 25%;
     height: 25%;
