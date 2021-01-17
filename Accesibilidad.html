@@ -30,13 +30,14 @@
       De esta forma nos hemos centrado en crear una pagina sencilla pero contiene diferentes aspectos que la mayoría de
       páginas web contempla como son el texto, las imagenes, graficas, videos, tablas y formularios.
       Todos estos aspectos cumplen las normas de Accesibilidad del nivel AA que se declara en la normativa de WCAG 2.0.
-      Para cercionarnos de este hecho hemos recurrido a una página de comprobación automatica recomendada en la
+      </p>
+    <h3>Evaluación automática</h3>
+    <p>Para cercionarnos de este hecho hemos recurrido a una página de comprobación automatica recomendada en la
       bibliografia de la asignatura.
       Esta página es conocida como <a class="black"
         href="https://achecker.ca/checker/index.php#output_div">achecker.</a> A continuación se deja una tabla que para
       cada uno de los archivos html muestra el icono de la certifación y el enlace para descargar el pdf que corresponde
       a la certificación de cada página.</p>
-
     <table class="table table-dark">
       <thead>
         <tr>
@@ -100,7 +101,7 @@
 
     <p>Obviamente como ya conocemos no es posible asegurar de forma completa que una pagina web asegura todas las
       funcionalidades necesarias para que sea lo más accesible posible para todo tipo de usuarios.
-      Por ese motivo a continuación revisaremos algunos de los aspectos que no se pueden verficar de forma automatica y
+      Por ese motivo a continuación revisaremos algunos de los aspectos que no se pueden verficar de forma automática y
       requieren por tanto de un toque humano.
     </p>
 
@@ -108,24 +109,34 @@
 
     <h5>Descripciones de las imagenes.</h5>
 
-    <p>Explicación.</p>
+    <p>Como podemos ver en cada uno de los pdfs que se muestran arriba vemos que un gran conjunto de los potenciales problemas tiene que ver con las 
+      descripciones de las imagenes. Estos posibles errores son que la descreipción sea muy corta, que sea muy larga, que no se adeque al contenido de la imagen 
+      o que directamente no sea neceasrio por X motivos. Como la página ha sido creada por nostros al dedo, sabemos que el contenido de cada imagen 
+    es el adequado y tiene un tamaño que no se pasa pero que es suficiente para explicar cada imagen.</p>
 
     <h5>Listas visuales.</h5>
 
-    <p>Explicación.</p>
+    <p>Otro posible error que se puede encontrar en un aplicativo web es que las listas que se forman visualmente no puedan ser analizadas
+      por un text to speach engine. En nuestro caso cada una de las listas que aparecen dentro de la web viene correctamente enlazas entre ellas haciendo uso 
+    de las herramientas de HTML5 como son las etiquetas ul y li.</p>
 
     <h5>Headers</h5>
 
-    <p>El header esta bien encapsulado. El header es compartido por todas las planas web, conteniendo los 4 links y el nombre de la web.</p>
+    <p>Como podemos observar en los posibles probelmas que puede contener la página web, uno de ellos consiste en la ocurrencia de que el header no este bien encapsulado creando asi
+      una situación donde el página no muestre como es debido. Como se puede observar tanto en el código como de forma visual el header esta bien encapsulado y muestra correctamente. El header es compartido por todas las planas web, conteniendo los 4 links y el nombre de la web.</p>
 
     <h5>Texto en Imagenes</h5>
 
-    <p>Hay imagenes en la web que tienen texto dibujado en ellas y se podria considerar que versonas con problemas de visibilidad no puedan ver y diferenciar el texto de la imagen de fondo. 
-      Pero este problema se soluciona con el atributo alt de las imagenes, donde se describe esta.</p>
+    <p>Hay imagenes en la web que tienen texto dibujado en ellas y que por tanto pueden suponer un problema para las personas con problemas de visibilidad.
+      Esto implica que las personas con este tipo de discapacidades no puedan diferenciar de forma correcta la imagen. Para solucionar este problema hacemos uso del atributo alt de las imagenes
+      de forma que se describa lo mejor posible la imagen. Además las pocas imagenes que tienen estas caracteristicas estan seleccionadas para que el poco texto que contengan sea bien grande y con buen contraste. 
+</p>
 
     <h5>Scripts</h5>
 
-    <p>Explicación</p>
+    <p>A veces los scripts de una página pueden modificar el html de esta y crear problemas para diferentes usuarios. En nuestro caso como la aplicación es en si
+      una estructura bien formada sin el uso de Javascript no nos encontramos con este error.
+    </p>
 
     <h5>Nombre de los enlaces</h5>
 
@@ -134,18 +145,64 @@
 
     <h5>Texto legible</h5>
 
-    <p>Explicación</p>
+    <p>Nos hemos asegurado que todo el texto que aparezca en la página sea de un color afilado como el negro de forma que en todo
+      momento el usuario sea capaz de leer el texto. Además el tamaño de las letras siempre ha sido diseñado tirando hacia lo más grande posible
+      de forma que personas con dificultades para leer lo tengan un poco más fácil.
+    </p>
 
     <h5>Contraste</h5>
 
-    <p>Explicación</p>
+    <p>El contraste puede ser uno de los errores más típicos en el desarollo de aplicaciones. En nuestro caso el analizar de contraste
+      del achecker no ha saltado mencionando ningun error y además la extensión Funklify que permite analizar el contraste y no ha saltado en ninguna de nuestras paginas.
+      Cabe mencionar que si un problema puediera surgir seria con el recuadro de color gris que se muestra junto al enlace de los articulos en el indice.
+      Este recuadro nos hemos asegurado que sea lo más claro posible de forma que el contraste se mantiene pero se puede enseñar la estructura que sigue el elemento del body del indice.
+    </p>
 
     <h5>Elementos comunes</h5>
 
     <p>Todos los elementos que se repiten en las diferences planas aparecen en el mismo orden. 
       Siendo los elementos repetidos el header y el footer. 
-      Estos elementos se repiten siempre igual en todas las planas, siendo el orden: Header, body y footer</p>
-  </div>
+      Estos elementos se repiten siempre igual en todas las planas, siendo el orden: Header, body y footer.
+      Esto tiene la itención de mejorar la navegabilidad de forma que ayuda a entender la estructura de la aplicación.</p>
+  
+    <h3>Pruebas de usuario</h3>
+      <p>
+        En el mundo del desarollo de aplicaciones es siempre necesario un paso que permita asegurarse que el trabajo que se ha realizado
+        para la aplicación ha sido satisfactorio y es correcto para los usuarios objetivo de la aplicación. De igual forma
+        cuando trabajamos para asegurar que las mediadas de accesibilidad se cumplen uno de los pasos en la envaluación es un conjunto de 
+        pruebas de usuario donde el aplicativo web es usado por personas con diferentes discapacidades.
+      </p>
+      <p>
+        En nuestro caso donde nosotros no formamos una compañia que tenga la capacidad de organizar unas pruebas de usuario a una escala media
+        o grande, hemos decidido usar un simulador de discapacidades en forma de plug-in de navegador conocido como Funkify. Esta herramienta
+        ofrece una gran variedad de ajustes ya creados para simular discapacidades y además permite crear configuraciones mixtas. Hemos hecho
+        uso de esta extensión para simular las siguientes discapacidades:
+      </p>
+
+      <ul>
+        <li>Daltonismo. (Visión limitada a la escala de grises).  </li>
+        <li>Discapacidades visuales de desenfoque (La pantalla se ve borrosa con un factor del 60%). </li>
+        <li>Parkinson.</li>
+      </ul>
+
+      <p>Estas pruebas han consistido en usar la página web para llegar al formulario de enviar y rellenarlo de forma correcta.
+        Como la página web en si es un esqueleto, es decir, no tiene un servidor que se encargue de gestionar las peticiones y de 
+        realizar o guardar las funcionalidadas, no podemos ver como se actualizan los articulos. Aun con esto la itención ha sido comprobar que
+        los campos han podido ser rellenados de forma correcta. Estas pruebas las hemos realizado los dos miembros del grupo por serparado para 
+        asegurar que no hubiera influencia del uno al otro y dos personas externas que nos han hecho el favor de realizar la prueba. Estas personas han uso el mismo
+        simulador con la misma configuración.
+      </p>
+
+      <p>Los resultados han sido más o menos los que esperabamos. Los cuatro usuarios han completado la tarea de forma satisfactoria.
+        Aun así somos conscientes que este es debido a la simplicidad de la página y al hecho de que no es lo mismo hacer pruebas con un grupo
+        representativo de personas con discapacidades varias que usar un grupo de 4 personas que usan un simulador de navegador.
+      </p>
+
+      <h3>Conclusiones</h3>
+      <p>Creemos que a nivel personal la práctica ha sido un exito. Se ha conseguido el nivel AA en todas las páginas de la aplicación y el AAA en la mayoría.
+        Sabemos que esto es debido a que en general la página es en si un esqueleto que carece de uso real, pero aun así creemos que se muestran de
+      forma representativa la mayoría de elementos que se pueden observar en aplicaciones reales como pueden ser las tablas, imagenes, graficos, videos y formularios. </p>
+    </div>
 
 
   <footer>
